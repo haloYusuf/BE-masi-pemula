@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Navbar CSS */
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 15px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F6F6E9;
+  box-shadow: 0px 4.5px 3.6px 0px rgba(0, 0, 0, 0.02), 0px 12.5px 10px 0px rgba(0, 0, 0, 0.04), 0px 30.1px 24.1px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+}
+
+header .logo img {
+  width: 200px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav a {
+  margin-right: 20px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.nav a:hover {
+  color: rgb(117, 117, 117)
+}
+
+.nav img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Hero CSS*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 80px 150px;
+  background-color: #2DA657;
+}
+
+.hero img{
+  width: 30vw;
+}
+
+.hero p {
+  text-align: center;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Berita CSS */
+.berita {
+  padding: 30px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.cari {
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cari input {
+  padding: 5px 20px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  width: 400px;
+}
+.cari i{
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.content-berita {
+  padding: 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-berita {
+  width: 350px;
+  border-radius: 10px;
+  background: #F6F6E9;
+  box-shadow: 0px 4.5px 3.6px 0px rgba(0, 0, 0, 0.02), 0px 12.5px 10px 0px rgba(0, 0, 0, 0.04), 0px 30.1px 24.1px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-berita img {
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card-berita .text-berita {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px;
+  margin-bottom: 25px;
+}
+
+.card-berita .text-berita h2 {
+  color: #000;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.card-berita .text-berita .keterangan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.keterangan .waktu{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.keterangan .waktu i{
+  font-size: 20px;
+}
+
+.keterangan .daerah{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.keterangan .daerah i{
+  font-size: 20px;
+}
+
+.card-berita .text-berita p {
+  color: #000;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.card-berita .btn-berita {
+  padding: 6px 30px;
+  background-color: #717775;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+}
+
+/* Footer CSS*/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 200px 20px;
+  border-top: 1px solid #000;
+  background-color: #F6F6E9;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-content .footer-heading {
+  color: #000;
+  text-align: justify;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.footer-content .kiri {
+  width: 70%;
+}
+
+.footer-content .kanan {
+  width: 30%;
+}
+
+.footer-content .kiri p {
+  color: #000;
+  text-align: justify;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.kanan .footer-link a {
+  color: #000;
+  text-align: justify;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.kanan .footer-link {
+  display: flex;
+  flex-direction: column;
+}
+
+footer h3{
+  font-size: 15px;
+}
