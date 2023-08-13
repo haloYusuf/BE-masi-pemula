@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusantara | Buat Artikel</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <!-- icons -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bikin-berita.css">
+
+    <!-- editor textarea -->
+    <script type="text/javascript" src="js/nicEdit.js"></script>
+    <script type="text/javascript" src="//js.nicedit.com/nicEdit-latest.js"></script>
+    <script type="text/javascript">
+        bkLib.onDomLoaded(function () {
+            nicEditors.allTextAreas()
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <!-- Nav -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.png">
+        </div>
+        <div class="nav">
+            <a href="#home">Home</a>
+            <!--📝 Bikin file content.html -->
+            <a href="content.html">Content</a>
+            <!-- 📝 Nanti profile diganti sesuai user -->
+            <img src="img/profile.png" class="profile">
+        </div>
+    </header>
+    <!-- END Nav -->
+
+    <!-- Isi -->
+    <section class="container">
+        <h1>Buat Artikel</h1>
+
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="form-item">
+                <label for="Judul">Judul</label>
+                <input type="text" name="Judul" id="Judul" required placeholder="Judul Artikel">
+            </div>
+
+            <!-- Youtube WPU PHP | 15.UPLOAD -->
+            <div class="form-item">
+                <label for="gambar">Gambar</label>
+                <input type="file" name="gambar" id="gambar">
+            </div>
+
+            <div class="form-item form-textarea">
+                <label for="isi">Isi Arikel</label>
+                <textarea name="isi" id="isi"></textarea>
+            </div>
+            <input type="submit" name="submit" id="submit" class="btn-submit">
+        </form>
+    </section>
+    <!-- END Isi -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="kiri">
+                <h3 class="footer-heading">
+                    Selamat Datang
+                </h3>
+                <p>Nusantara adalah sebuah platform online mengenai kebudayan Indonesia di web ini kamu bisa membaca
+                    mengenai kebudayaan yang sudah di tulis oleh beberapa orang yang sudah terdaftar di website ini.
+                    Selamat menikmati </p>
+            </div>
+            <div class="kanan">
+                <h3 class="footer-heading">Page</h3>
+                <div class="footer-link">
+                    <a href="#">Tentang Kami</a>
+                    <a href="#">Github</a>
+                </div>
+            </div>
+        </div>
+        <h3>Copyright by Nusantara - 2023</h3>
+    </footer>
+    <!-- END Footer -->
+</body>
+
+</html>
